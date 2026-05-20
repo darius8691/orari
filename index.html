@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barber Shop</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --green: #1faa59;
+    --dark-green: #168947;
+    --light: #ffffff;
+    --bg: #f3f7f4;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(180deg, #ffffff, #eef7f0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #222;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    border: 2px solid #e5f3e8;
+  }
+
+  .hero {
+    background: var(--green);
+    padding: 40px 25px;
+    text-align: center;
+    color: white;
+  }
+
+  .logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: white;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: var(--green);
+    font-weight: bold;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .subtitle {
+    margin-top: 10px;
+    opacity: 0.9;
+    font-size: 14px;
+  }
+
+  .content {
+    padding: 24px;
+  }
+
+  .section {
+    background: var(--bg);
+    border-radius: 20px;
+    padding: 18px;
+    margin-bottom: 18px;
+  }
+
+  .section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--dark-green);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .hours-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #dcebdd;
+    font-size: 14px;
+  }
+
+  .hours-row:last-child {
+    border-bottom: none;
+  }
+
+  .contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background: var(--green);
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 14px;
+    font-weight: 600;
+    margin-top: 12px;
+    transition: 0.2s;
+  }
+
+  .contact-btn:hover {
+    background: var(--dark-green);
+  }
+
+  .address {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: 11px;
+    color: #888;
+    padding: 0 20px 20px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <div class="hero">
+    <div class="logo">✂</div>
+    <h1>Green Barber</h1>
+    <div class="subtitle">Tagli moderni • Barba • Styling</div>
+  </div>
+
+  <div class="content">
+
+    <div class="section">
+      <div class="section-title">🕒 Orari</div>
+
+      <div class="hours-row">
+        <span>Lunedì</span>
+        <span>09:00 - 18:00</span>
+      </div>
+
+      <div class="hours-row">
+        <span>Martedì</span>
+        <span>09:00 - 19:00</span>
+      </div>
+
+      <div class="hours-row">
+        <span>Mercoledì</span>
+        <span>09:00 - 19:00</span>
+      </div>
+
+      <div class="hours-row">
+        <span>Giovedì</span>
+        <span>09:00 - 19:00</span>
+      </div>
+
+      <div class="hours-row">
+        <span>Venerdì</span>
+        <span>09:00 - 20:00</span>
+      </div>
+
+      <div class="hours-row">
+        <span>Sabato</span>
+        <span>09:00 - 18:00</span>
+      </div>
+
+      <div class="hours-row">
+        <span>Domenica</span>
+        <span>Chiuso</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">📍 Dove siamo</div>
+      <div class="address">
+        Via Roma 123<br>
+        Palermo, Sicilia
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">📞 Contatti</div>
+
+      <a class="contact-btn" href="tel:+391234567890">
+        📱 Chiama ora
+      </a>
+
+      <a class="contact-btn" href="https://wa.me/391234567890">
+        💬 WhatsApp
+      </a>
+
+      <a class="contact-btn" href="https://instagram.com/greenbarber">
+        📸 Instagram
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    Powered by NFC & 3D Print
+  </div>
+</div>
+
+</body>
+</html>
+
